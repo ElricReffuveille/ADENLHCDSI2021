@@ -1,1 +1,3 @@
-Ceci est un dossier qui servira de model pour créer les prochainne appli web.
+Il s'agit du cours du 09/11/21
+
+ce site est une révision de html/css
