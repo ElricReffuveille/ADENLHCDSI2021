@@ -1,0 +1,11 @@
+.square {
+	display: inline-block;
+	width: 298px;
+	height: 298px;
+	background-color: lightblue;
+	border: 1px solid blue;
+}
+
+.square:nth-child(2) {
+	margin: 0 10px;
+}
