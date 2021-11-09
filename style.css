@@ -1,0 +1,23 @@
+section {
+	height: 50vh;
+}
+
+.square{
+	display:inline-block;
+	width:298px;
+	height:298px;
+	background-color: lightblue;
+	border: 1px solid blue;
+}
+
+.square:first-child{
+	margin-left: 20vh;
+	margin-right: 10px;
+}
+
+.square:last-child{
+	margin-left: 10px;
+	margin-right: 20vh;
+}
+
+	
