@@ -14,3 +14,15 @@ ul li{
 footer p{
     display: inline;
 }
+
+div{
+    background-color: lightblue;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid darkblue;
+}
+
+#divSection *{
+    display: inline-block;
+}
