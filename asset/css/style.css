@@ -1,3 +1,4 @@
+/* Ma partie */
 .bloc {
   display: inline-block;
   background-color: lightblue;
@@ -5,4 +6,16 @@
   margin: 0 5px;
   height: 298px;
   width: 298px;
+}
+
+/* Correction */
+.square {
+  display: inline-block;
+  background-color: lightblue;
+  border: blue solid 1px;
+  height: 298px;
+  width: 298px;
+}
+.square:nth-child(2) {
+  margin: 0 10px;
 }
