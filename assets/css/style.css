@@ -15,14 +15,13 @@ footer p{
     display: inline;
 }
 
-div{
+.divSection{
     background-color: lightblue;
-    height: 300px;
-    width: 300px;
-    margin: 5px;
+    height: 298px;
+    width: 298px;
     border: 1px solid darkblue;
-}
-
-#divSection *{
     display: inline-block;
+}
+.divSection:nth-child(2){
+    margin: 0 10px;
 }
