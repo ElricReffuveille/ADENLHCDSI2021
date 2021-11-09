@@ -1,0 +1,44 @@
+#id {
+	background-color: brown;
+}
+
+.maClasse {
+	background-color: cyan;
+}
+
+li {
+	background-color: lime;
+}
+
+#imgCopyright,
+#pCopyright {
+	display: inline;
+}
+
+.square {
+	display: inline-block;
+	width: 298px;
+	height: 298px;
+	background-color: lightblue;
+	border: 1px solid blue;
+}
+
+.square:nth-child(2) {
+	margin: 0 10px;
+}
+
+#square2 {
+	display: flex;
+}
+
+#square2 div {
+	display: inline-block;
+	width: 298px;
+	height: 298px;
+	background-color: lime;
+	border: 1px solid green;
+}
+
+#square2 div:nth-child(2) {
+	margin: 0 10px;
+}

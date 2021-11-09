@@ -1,0 +1,13 @@
+<!-- Récupérer le Repo Github distant -->
+git init
+git remote add origin "https://github.com/ElricReffuveille/ADENLHCDSI2021.git"
+git pull origin master
+
+<!-- Créer votre branche -->
+git checkout -b monNom
+git push origin monNom
+
+<!-- Commit vos changements -->
+git add .
+git commit -am "Votre message de commit"
+git push origin monNom
