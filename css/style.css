@@ -1,0 +1,10 @@
+h1,h2,li{
+    font-family: Arial;
+}
+.square{
+    display: inline-block;
+    height:298px;
+    width:298px;
+    background-color: cyan;
+    border: 1px solid blue;
+}
