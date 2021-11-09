@@ -1,0 +1,1 @@
+Ceci est un dossier qui servira de model pour créer les prochainne appli web.
