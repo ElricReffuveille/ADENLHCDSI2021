@@ -1,0 +1,19 @@
+li {
+    background-color: lightgrey;
+}
+
+.block {
+    display:inline-block;
+    height: 398px;
+    width:398px;
+    background-color:blue;
+    border:1px solid darkblue;
+}
+
+.block:last-child {
+    margin-left: 10px;
+}
+
+.block:first-child {
+    margin-right: 10px;
+}
