@@ -1,0 +1,38 @@
+body, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    width:30vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom:solid 5px white;
+}
+
+input[name="delete"] {
+    text-decoration: none;
+}
+
+main {
+    min-height: 75vh;
+}
+
+/*@madeBy Florian Bouly*/
