@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Faire un petit tableau, ajouter une classe 'suppression' quand cliquée (colorie en rouge par exemple)
+    ajouter un bouton qui supprime les cases ayant la classe 'suppression'  -->
+
+  <div id="myDIV" class="header">
+    <h2>Toudou liste</h2>
+    <input type="text" id="myInput">
+    <button onclick="nouv()" onclick="incremente()" class="addBtn"> Ajouter </button>
+  </div>
+
+  <ul id="myUL">
+    <li id="1" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 1 </li>
+    <li id="2" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 2 </li>
+    <li id="3" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 3 </li>
+    <li id="4" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 4 </li>
+    <li id="5" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 5 </li>
+    <li id="6" class="vide" onClick="ajoutSuppr(this.id)"> Faire une todo list 6 </li>
+  </ul>
+
+  <button id="boutt" onClick="suppression()"> Supprimer </button>
+
+  <!-- JavaScript & jQuery -->
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

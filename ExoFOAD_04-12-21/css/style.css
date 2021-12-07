@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+  
+.aSuppr
+{
+  background-color: red;
+}
