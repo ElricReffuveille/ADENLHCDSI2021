@@ -1,0 +1,87 @@
+/* Layout global */
+header {
+    padding: 15px;
+}
+main {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Section Liste des tâches */
+.task-list  {
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #C2C2C2;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.task-list H2 {
+    padding: 15px;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.tasks {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de une seule tâche */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style de une seule tâche */
+.task-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.task-item:nth-child(even) {
+    background-color: #E6E6E6;
+}
+
+.task-item p {
+    margin: 0;
+}
+
+.task-item .task-number {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.task-item .task-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.task-item .task-content > span {
+    font-size: 20px;
+}
+
+.task-item .task-content > time {
+    color: grey;
+    font-size: 12px;
+}
+
+.task-item .btn-icon {
+    margin: 3px;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.task-item .btn-icon:hover {
+    background-color: #0b5ed7;
+}
