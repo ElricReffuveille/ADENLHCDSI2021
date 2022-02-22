@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Inclut une bordure */
+* {
+  box-sizing: border-box;
+}
+
+/* Supprimer les marges et le remplissage de la liste */
+    ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styliser les éléments de liste */
+    ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb#750808;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* rendre les éléments de liste non sélectionnables */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Définissez tous les éléments de liste impairs sur une couleur différente */
+    ul li:nth-child(odd) {
+  background: #ffffff;
+}
+
+/* Couleur d’arrière-plan plus foncée lors du survol */
+    ul li:hover {
+  background: rgb(255, 255, 255);
+}
+
+/* Lorsque vous cliquez dessus, ajoutez une couleur d’arrière-plan */
+    ul li.checked {
+  background: rgb(175, 10, 10);
+  color: rgb(0, 0, 0);
+  text-decoration: line-through;
+}
+
+/* Ajoutez une marque « cochée » lorsque vous cliquez sur */
+    ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Stylisez le bouton de fermeture */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #222021;
+  color: rgb(24, 163, 197);
+}
+
+/* Styliser l’en-tête */
+.header {
+  background-color: #4c4e4e;
+  padding: 30px 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Effacer les flotteurs après l’en-tête */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styliser l’entrée */
+    input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Stylisez le bouton « Ajouter » */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #444644;
+  color: rgb(0, 0, 0);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: rgb(48, 27, 27);
+}
+</style>
+</head>
+<body>
+
+        <div id="myDIV" class="header">
+        <h2 style="margin:5px">Bonjour voici ma ToDoList</h2>
+        <input type="text" id="myInput" placeholder="Ajouter votre tâche">
+        <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+        </ul>
+
+        <script>
+// Créez un bouton « fermer » et ajoutez-le à chaque élément de liste
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Cliquez sur un bouton de fermeture pour masquer l’élément de liste actuel
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Ajouter un symbole « coché » lorsque vous cliquez sur un élément de liste
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Créer un nouvel élément de liste en cliquant sur le bouton « Ajouter »
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("Veuillez entrez une tâche");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+<footer>
+
+    <p class="text-center">GNU GENERAL PUBLIC LICENSE - Made by <a>Benjamin TOUPIN</a></p>
+
+</footer>
+</body>
+</html>
