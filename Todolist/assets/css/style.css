@@ -1,0 +1,89 @@
+body{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+nav{
+    background-color: rgb(8, 0, 78);
+    
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    margin: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color:firebrick;
+    width: 35vh;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid bisque;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+section h2{
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section hr {
+    width: 100%;
+}
+
+section div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input{
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 15%;
+    list-style:decimal;
+    min-height: 50px;
+}
+
+.tasks li {
+    word-break: break-word;
+    padding: 2%;
+    margin: 2%;
+    border: 1px solid wheat;
+    cursor: grab;
+
+}
+
+.tasks li .close {
+    position: relative;
+    float: right;
+}
+
+.tasks li a {
+    align-self: flex-end;
+}

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Trello du pauvre</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="toDoList">
+            <h2>A faire</h2>
+            <hr>
+            <div>
+                <input class="newTask" type="text" placeholder="Entrez une nouvelle tâches">
+                <a class="createNewTask">+</a>
+            </div>
+            <ul class="tasks" ondrop="drop_handler(event)" ondragover="dragover_handler(event)"></ul>
+        </section>
+        <section id="currentList">
+            <h2>En cours</h2>
+            <hr>
+            <div>
+                <input class="newTask" type="text" placeholder="Entrez une nouvelle tâches">
+                <a class="createNewTask">+</a>
+            </div>
+            <ul class="tasks" ondrop="drop_handler(event)" ondragover="dragover_handler(event)"></ul>
+        </section>
+        <section id="doneList">
+            <h2>Terminées</h2>
+            <hr>
+            <div>
+                <input class="newTask" type="text" placeholder="Entrez une nouvelle tâches">
+                <a class="createNewTask">+</a>
+            </div>
+            <ul class="tasks" ondrop="drop_handler(event)" ondragover="dragover_handler(event)"></ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
