@@ -1,0 +1,31 @@
+<body>
+    <h1>Mon blog</h1>
+</body>
+</html> 
+
+<?php
+    try
+    {
+        // Connexion à la base test
+        $mysqlConnection = new PDO('mysql:host=localhost;dbname=test;charset=utf8', "root", "", array(
+            PDO::ATTR_PERSISTENT => true
+        ));
+    }
+    catch(Exception $e)
+    {
+        // Arrêt sur erreur et message
+            die('Erreur : '.$e->getMessage());
+    }
+
+    $sam = $mysqlConnection->prepare("SELECT * FROM blog");
+    $sam->execute();
+    $view = $sam->fetchAll();
+
+    // Affichage des titres et contenus
+    foreach ($view as $test) {
+    ?>
+        <h2><?php echo $test['titre']; ?></h2>
+        <p><?php echo $test['contenu']; ?></p>
+    <?php
+    }
+?>

@@ -1,0 +1,10 @@
+Blog basé sur MySql
+
+Mise en service
+
+1. Installer XAMPP
+2. Lancer MySql
+3. Executer le code du fichier Creation.bdd dans un terminal
+4. Copier les fichiers form.php et index.html dans le répertoire htdocs de XAMPP.
+5. Lancer le fichier form.php dans le navigateur http://Localhost/ .. /htdocs selon l'emplacement de htdocs dans le répertoire de XAMPP.
+6. Lancer le fichier index.html dans le navigatuer pour consulter le blog.
