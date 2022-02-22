@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    text-align: 	center	;
+    color: 	white	;
+}
+
+
+h1{
+    text-align: center;
+    margin: 50px;
+    color: 	white;
+}
+
+
+#form{
+	width: 500px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgoldenrodyellow;
+    justify-content: center;
+    border: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#bouton{
+	width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+p{
+	color: 	white;
+	text-align: center;
+}
+
+#titre{
+	color:black;
+
+}
+
+#contenu{
+	color:black;
+}
+
