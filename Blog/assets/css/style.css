@@ -1,0 +1,63 @@
+body{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-gap: 10px;
+}
+
+header{
+    font-size: 2.5em;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+main{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#addArticle form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addArticle form input{
+    margin: 5px;
+}
+
+.input-field{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+}
+
+.articles{
+    margin: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.articles:hover{
+    box-shadow: 0 0 5px black;
+}
+
+.articles h2{
+    margin-bottom: 3px;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+
+.articles p{
+    font-size: 1.2em;
+}
