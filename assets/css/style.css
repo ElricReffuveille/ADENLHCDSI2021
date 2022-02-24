@@ -14,14 +14,28 @@ ul li{
 footer p{
     display: inline;
 }
-
+.divBlocks{
+    display: grid;
+    grid-gap: 10px;
+    width: 920px;
+}
 .divSection{
     background-color: lightblue;
     height: 298px;
     width: 298px;
     border: 1px solid darkblue;
-    display: inline-block;
 }
-.divSection:nth-child(2){
-    margin: 0 10px;
+#divUn,#divTrois{
+    grid-row: 1;
+}
+
+#divUn{
+    grid-column: 1;
+}
+#divDeux{
+    grid-row: 2;
+    grid-column: 2;
+}
+#divTrois{
+    grid-column: 3;
 }
